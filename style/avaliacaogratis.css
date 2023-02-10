@@ -51,11 +51,8 @@ main #Banner{
 
 }
 
-main #Banner button{
-    background-color: var(--cor-principal);
-    color:var(--cor-branca);
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    margin: 20px;
+
+
+main #aqui{
+    
 }

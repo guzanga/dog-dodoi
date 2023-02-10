@@ -76,6 +76,7 @@ main #Banner button:hover{
 #bemvindo #BemVindo h3{
     color: var(--cor-principal);
     margin-bottom: 10px;
+    color: #EA1C81;
 }
 
 
