@@ -1,0 +1,21 @@
+/* midia query */
+
+/* se ( se minha tela for menor que 990px) então
+faça alguma coisa */
+@media(max-width:950px){
+    #bemvindo{
+        display: block;
+    }
+}
+@media(max-width:950px){
+    main #formulario{
+        background-image:none; 
+        }
+    }
+
+ @media(max-width:600px){
+    main #beneficios #beneficios-Servicos{
+        display: block;
+    }
+
+ }

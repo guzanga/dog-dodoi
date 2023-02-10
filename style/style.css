@@ -1,0 +1,144 @@
+:root{
+    /* adiciona cor principal */
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF
+ }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition:all 0.5s;
+    box-sizing: border-box;
+}
+#header{
+    /* / coloca cor no background e altera o formato do header / */
+    background-color: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+/* / efeito cascata: envoca um pai e outro pai e outro pai para chegar no filho / */
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    padding: 15px;
+    color: var(--cor-branca);
+    border-radius: 40px;
+}
+/* Da um espaçamento das palavras */
+.marginLateral{
+    margin: 0px 20px;
+}
+
+main #Banner{
+    background-image: url("../imagens/Banner.png");
+    /* / 100 - a soma da nossa resulução, sempre vamos usar */ 
+    height: calc(100vh - 116px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+
+}
+
+main #Banner button{
+    background-color: var(--cor-principal);
+    color:var(--cor-branca);
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+main #Banner button:hover{
+    cursor: pointer;
+    font-size: larger;
+    padding: 15px;
+}
+
+#bemvindo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bemvindo #BemVindo h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+
+main #beneficios {
+    background-color: var(--cor-branca);
+
+}
+main #beneficios #beneficos-Nossosbeneficios{
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-Servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: var(--cor-principal);
+
+}
+
+main #formulario
+{
+    text-align: center;
+    
+}
+
+ main #form form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black ;
+    border-radius: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+    text-align: center;
+
+ }
+ main #form{
+    padding: 8px;
+    border: none;
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+    margin: 0 auto;
+ }
+main #formulario{
+    background-image: url(../imagens/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
+
+
+#rodape{
+    background-color: var(--cor-topo);
+    text-align: center;
+}
+ main #formulario #marcao{
+    background-color: #EA1C81;
+ }
