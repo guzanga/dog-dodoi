@@ -1,10 +1,10 @@
 :root{
     /* adiciona cor principal */
     --cor-principal: #EA1C81;
-    --cor-topo: #D8F1FB;
+    --cor-topo: #D8F1FB82;
     --cor-preta: black;
     --cor-branca: white;
-    --cor-fundo: #FAFBFF
+    --cor-fundo: #D8F1FB;
  }
 
  *{
@@ -12,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
  }
 #header{
     /* / coloca cor no background e altera o formato do header / */
@@ -32,27 +33,68 @@
     color: var(--cor-branca);
     border-radius: 40px;
 }
-.marginLateral{
-    margin: 0px 20px;
+
+main #formnome #cons #consulta{
+    margin-top: 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--cor-preta);
+    margin-bottom: 38px;
 }
 
-main #Banner{
-    background-image: url("../imagens/Banner.png");
-    /* / 100 - a soma da nossa resulução, sempre vamos usar */ 
-    height: calc(100vh - 116px);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-principal);
-
+main #form-cad #register{
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    margin-left: 29px;
+    padding-bottom: 39px;
 }
 
-
-
-main #aqui{
-    
+main #formnome{
+    height: 841px;
 }
+
+main #form-cad #register input{
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 134px;
+    height: 39px;
+    background-color: var(--cor-branca);
+}
+
+main #form-cad #register #nome input{
+    width: 700px;
+    height: 39px;
+}
+
+main #form-cad #formtext{
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 29px;
+}
+
+main #form-cad #formtext textarea{
+    width: 1038px;
+    height: 264px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: var(--cor-branca);
+}
+
+main #form-cad .form-formulariosubmit button{
+    width: 198px;
+    height: 24px;
+    margin-top: 58px;
+    margin-left: 40px;
+    margin-right: 53px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
